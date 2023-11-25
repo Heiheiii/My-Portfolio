@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Portfolio</title>
+
+</head>
+<body>
+    <section style="max-width: 190rem; margin: 0 auto;">
+        <header class="header">
+            <nav class="navbar">
+                <img class="nav-logo" src="./img/LOGO.png" alt="">
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#works" class="nav-link">Work</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#certificates" class="nav-link">Certificates</a>
+                    </li>
+                </ul>
+                
+           <div class="hamburger">
+               <span class="ham"></span>
+               <span class="ham"></span>
+               <span class="ham"></span>
+           </div>
+       </nav>
+   </header>
+    
+   <!-- home section -->
+        <section id="home" style="background-color: #A9B388">
+            <div class="main-cont">
+                <div>
+                    <img class="profile" src="./img/MicrosoftTeams-image (3).png" style="border-radius: 50%;">
+                </div>
+    
+                <div>
+                    <h1 style="font-size: 4rem;font-family: tahoma; font-weight: 100;">Hi I'm Nikko</h1>
+                    <br>
+                    <h1 style="color: red; font-size: 3rem; font-family: tahoma;">Bachelor of Science and Technology Student.</h1>
+                    <br>
+                    <p style="font-size: 2rem; font-family: tahoma;">
+                        A third year BSIT currently studying at Guagua National Colleges 
+                        <br>
+                        to become a Web Developer & UI/UX Designer.
+                    </p>
+                    <br><br>
+                    <div>
+                        <button class="btn" style="margin:0 20px 20px 0; background-color: skyblue;">
+                            Contact
+                        </button>
+                        
+                        <button class="btn" style="background-color: skyblue !important; ">
+                            Download
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
+        <!-- About Section -->
+    
+        <section id="about">
+            <div style="text-align: center;">
+                <h1 style="font-size: 4rem; font-family: tahoma; font-weight: 100;">ABOUT ME</h1>
+            </div>
+            <br><br><br><br><br><br><br>
+            
+            <div class="itsme">
+                <div>
+                    <img class="profile2" src="./img/profile-image.png" alt="">
+                </div>
+                    <div style="max-width: 600px;">
+                        <p style="font-size: 20px; font-family: tahoma;">
+                            I possess a dynamic skill set that revolves around UI/UX design and programming,
+                            showcasing my proficiency in both the aesthetic and functional aspects of digital
+                            creation. With a keen eye for user experience, I excel in crafting intuitive and 
+                            visually appealing interfaces that prioritize user engagement and satisfaction. 
+                            My UI/UX design skills are complemented by a robust programming background, enabling
+                            me to bring my designs to life through efficient and elegant code. Whether it's translating
+                            user needs into compelling design concepts or seamlessly integrating functionality into the final
+                            product, I am adept at navigating the intersection of design and technology. My commitment to 
+                            staying abreast of industry trends and continuously enhancing my skills ensures that I contribute
+                            effectively to projects that demand a harmonious blend of creativity and technical expertise.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- works section -->
+    <section id="works">
+            <h1 style="text-align: center; margin-bottom: 5rem; font-size: 5rem; font-family: tahoma; font-weight: 100;">My Works</h1><br><br><br><br>
+            <div>
+                <div class="worksss"> 
+                    <img class="pics" src="./img/works1.png" style="box-shadow: 5px 10px #888888;;">
+                    <img class="pics" src="./img/works2.png" style="box-shadow: 5px 10px #888888;">
+                </div>
+            </div>
+        </section>
+    
+        <!-- cert section -->
+    <section id="certificates">
+            <h1 style="text-align: center; margin-bottom: 5rem; font-size: 5rem; font-family: tahoma; font-weight: 100;">My Certificates</h1><br><br><br><br>
+            <div>
+                <div class="worksss">
+                    <div class="pik">
+                        <img class="cert1" src="./img/Cert4.png" alt="">
+                    </div>
+                    <div class="pik">
+                        <img class="cert1" src="./img/cert2.png" alt="">                      
+                    </div>
+                    <div class="pik">
+                        <img class="cert1" src="./img/cert3.png" alt="">                      
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer section -->
+        <footer class="footers">
+            <div style="display: flex; gap: 5rem; align-items: center; justify-content: center; margin-bottom: 20px;">   
+                <div>
+                    <img class="social-icon" src="./img/facebook.png" alt="">
+                </div>
+    
+                <div>
+                    <img class="social-icon" src="./img/instagram.png" alt="">
+                </div>
+    
+                <div>
+                    <img class="social-icon" src="./img/twitter.png" alt="">
+                </div>
+            </div>
+            <div>
+                <p style="color: white; font-size: 1.5rem;">
+                    Copyright © 2023 Nikko Magtuloy. All rights reserved
+                </p>
+            </div>
+        </footer>
+    
+        
+    </section>
+
+    <!-- JS code for nav -->
+<script>
+    const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
+
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach(n => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
+</script>
+
+</body>
+</html>
